@@ -51,3 +51,11 @@
         name: TestUser2
         password: "$6$FNOn9brrouKepnOC$rWYxdBbv9RCMTCsjpjnJRM/N1xA4Far392TNsQqkbHijON8W1RHyP4W1.TFvhuI40wUH8j/R.BJK20qSvdA4W."
         group: root
+
+- name: Create Users on Switches
+  hosts: switches
+  tasks:
+    - name: Create Local-Admin user
+      community.network.exos_command:
+        commands:
+          - user add Local-Admin WGU123
