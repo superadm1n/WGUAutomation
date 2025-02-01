@@ -1,0 +1,6 @@
+- name: test playbook
+  hosts: windows
+
+  tasks:
+    - name: test
+      command: ls
