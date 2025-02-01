@@ -58,4 +58,4 @@
     - name: Create Local-Admin user
       community.network.exos_command:
         commands:
-          - user add Local-Admin WGU123
+          - create account admin Local-Admin WGU123
