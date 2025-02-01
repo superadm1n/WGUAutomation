@@ -20,4 +20,4 @@ if __name__ == '__main__':
 
     for ip, data in config.get('switches', {}).items():
         with ConnectHandler(device_type='extreme_exos', host=ip, username=data.get('vars', {}).get('ansible_user', {}), password='') as ssh:
-            print(ssh.send_command('show version'))
+            print(ssh.send_command('show vlan'))
