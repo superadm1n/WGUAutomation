@@ -39,7 +39,7 @@
       ansible.builtin.user:
         name: TestUser1
         password: WGU123
-        group: admin
+        group: root
 
 - name: Create Users on MGMT Network
   hosts: 10.10.1.57
