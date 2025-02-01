@@ -9,3 +9,24 @@
         state: present
         groups:
           Administrators
+    - name: Create DesktopUser2
+      ansible.windows.win_user:
+        name: DesktopUser2
+        password: WGU123
+        state: present
+        groups:
+          Administrators
+    - name: Create DesktopUser3
+      ansible.windows.win_user:
+        name: DesktopUser3
+        password: WGU123
+        state: present
+        groups:
+          Administrators
+    - name: Create DesktopUser4
+      ansible.windows.win_user:
+        name: DesktopUser4
+        password: WGU123
+        state: present
+        groups:
+          Administrators
