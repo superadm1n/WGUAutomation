@@ -48,4 +48,4 @@
       ansible.builtin.user:
         name: TestUser2
         password: WGU123
-        group: admin
+        group: root
