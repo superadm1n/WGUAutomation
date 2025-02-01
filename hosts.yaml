@@ -1,0 +1,28 @@
+linux:
+  hosts:
+    10.10.1.56:
+    10.10.1.57:
+  vars:
+    ansible_password: P@ssw0rd
+windows:
+  hosts:
+    10.10.1.35:
+    10.10.1.36:
+    10.10.1.43:
+    10.10.1.29:
+    10.10.1.28:
+  vars:
+    ansible_port: 5985
+    ansible_user: Administrator
+    ansible_password: P@ssw0rd
+    ansible_connection: winrm
+exos:
+  hosts:
+    10.10.1.5:
+    10.10.1.6:
+    10.10.1.7:
+    10.10.1.8:
+  vars:
+    ansible_user: admin
+    ansible_connection: ansible.netcommon.network_cli
+    ansible_network_os: exos
