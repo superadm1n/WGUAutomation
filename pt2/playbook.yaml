@@ -56,6 +56,6 @@
   hosts: switches
   tasks:
     - name: Create Local-Admin user
-      community.network.exos_command:
+      community.network.exos_config:
         commands:
           - create account admin Local-Admin WGU123
