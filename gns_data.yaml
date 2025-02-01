@@ -1,6 +1,6 @@
 
 switches:
-  10.10.1.2:
+  10.10.1.24:
     General settings:
       name: Local_Switch
       ram: 512MB
@@ -15,7 +15,7 @@ switches:
       Type: Realtek 8139 Ethernet (rtl8139)
       Replicate network connection states in QEMU: True
 
-  10.10.1.8:
+  10.10.1.22:
     General settings:
       name: User_Network
       ram: 512MB
@@ -30,7 +30,7 @@ switches:
       Type: Realtek 8139 Ethernet (rtl8139)
       Replicate network connection states in QEMU: True
 
-  10.10.1.7:
+  10.10.1.32:
     General settings:
       name: ACCT_Network
       ram: 512MB
@@ -45,7 +45,7 @@ switches:
       Type: Realtek 8139 Ethernet (rtl8139)
       Replicate network connection states in QEMU: True
 
-  10.10.1.6:
+  10.10.1.31:
     General settings:
       name: MGMT_Network
       ram: 512MB
@@ -60,7 +60,7 @@ switches:
       Type: Realtek 8139 Ethernet (rtl8139)
       Replicate network connection states in QEMU: True
 
-  10.10.1.5:
+  10.10.1.30:
     General settings:
       name: IT_Network
       ram: 512MB
