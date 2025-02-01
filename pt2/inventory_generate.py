@@ -31,5 +31,11 @@ gns_data.get('windows', {})['vars'] = {
         'ansible_connection': 'winrm',
     }
 
+gns_data.get('switches', {})['vars'] = {
+        'ansible_user': 'admin',
+        'ansible_connection': 'ansible.netcommon.network_cli',
+        'ansible_network_os': 'exos'
+    }
+
 # save new file
 write_yaml('ansible_inventory.yaml', gns_data)
