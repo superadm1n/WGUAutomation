@@ -2,5 +2,7 @@
   hosts: windows
 
   tasks:
-    - name: test
-      command: dir
+    - name: Ensure user bob is absent
+      ansible.windows.win_user:
+        name: bob
+        state: absent
