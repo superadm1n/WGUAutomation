@@ -39,7 +39,7 @@
     - name: Create TestUser1
       ansible.builtin.user:
         name: TestUser1
-        password: WGU123
+        password: "$6$FNOn9brrouKepnOC$rWYxdBbv9RCMTCsjpjnJRM/N1xA4Far392TNsQqkbHijON8W1RHyP4W1.TFvhuI40wUH8j/R.BJK20qSvdA4W."
         group: root
 
 - name: Create Users on MGMT Network
@@ -49,5 +49,5 @@
     - name: Create TestUser2
       ansible.builtin.user:
         name: TestUser2
-        password: WGU123
+        password: "$6$FNOn9brrouKepnOC$rWYxdBbv9RCMTCsjpjnJRM/N1xA4Far392TNsQqkbHijON8W1RHyP4W1.TFvhuI40wUH8j/R.BJK20qSvdA4W."
         group: root
