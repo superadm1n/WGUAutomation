@@ -36,7 +36,7 @@
   hosts: 10.10.1.56
   tasks:
     - name: Create TestUser1
-      ansible.windows.win_user:
+      ansible.builtin.user:
         name: TestUser1
         password: WGU123
         group: admin
@@ -45,7 +45,7 @@
   hosts: 10.10.1.57
   tasks:
     - name: Create TestUser2
-      ansible.windows.win_user:
+      ansible.builtin.user:
         name: TestUser2
         password: WGU123
         group: admin
