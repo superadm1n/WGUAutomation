@@ -1,7 +1,6 @@
 - name: Create Users on Switches
   hosts: switches
+  gather_facts: no
   tasks:
     - name: Create Local-Admin user
-      community.network.exos_config:
-        commands:
-          - create account admin Local-Admin WGU123
+      raw: create account admin Local-Admin WGU123
