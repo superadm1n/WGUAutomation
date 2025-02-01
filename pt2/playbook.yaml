@@ -1,4 +1,4 @@
-- name: test playbook
+- name: Create Users on Windows
   hosts: windows
 
   tasks:
@@ -30,3 +30,22 @@
         state: present
         groups:
           Administrators
+
+
+- name: Create Users on Acct Network
+  hosts: 10.10.1.56
+  tasks:
+    - name: Create TestUser1
+      ansible.windows.win_user:
+        name: TestUser1
+        password: WGU123
+        group: admin
+
+- name: Create Users on MGMT Network
+  hosts: 10.10.1.57
+  tasks:
+    - name: Create TestUser2
+      ansible.windows.win_user:
+        name: TestUser2
+        password: WGU123
+        group: admin
