@@ -19,7 +19,7 @@ def write_yaml(file, data):
 gns_data = read_yaml('gns_data.yaml')
 
 # add ansible information to each switch
-for ip, data in gns_data.items():
+for ip, data in gns_data.get('switches', {}).items():
     data['vars'] = {
         'ansible_user': 'admin',
         'ansible_connection': 'ansible.netcommon.network_cli',
