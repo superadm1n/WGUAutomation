@@ -33,7 +33,7 @@
 
 
 - name: Create Users on Acct Network
-  hosts: 10.10.1.56
+  host: 10.10.1.56
   ansible.builtin.user:
     name: TestUser1
     password: WGU123
