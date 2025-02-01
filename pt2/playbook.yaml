@@ -2,7 +2,10 @@
   hosts: windows
 
   tasks:
-    - name: Ensure user bob is absent
+    - name: Create DesktopUser1
       ansible.windows.win_user:
-        name: bob
-        state: absent
+        name: DesktopUser1
+        password: WGU123
+        state: present
+        groups:
+          Administrators
