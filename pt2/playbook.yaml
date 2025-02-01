@@ -3,6 +3,4 @@
 
   tasks:
     - name: test
-      ansible.windows.win_powershell:
-        script: |
-          echo "Hello World"
+      command: dir
