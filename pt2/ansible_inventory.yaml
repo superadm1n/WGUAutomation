@@ -105,8 +105,7 @@ switches:
   vars:
     ansible_connection: ansible.netcommon.network_cli
     ansible_network_os: exos
-    ansible_user: 'admin'
-    ansible_password: ''
+    ansible_user: admin
 windows:
   hosts:
     10.10.1.29:
