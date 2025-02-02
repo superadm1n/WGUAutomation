@@ -3,4 +3,4 @@
   gather_facts: no
   tasks:
     - name: Create Local-Admin user
-      raw: create account admin Local-Admin WGU123
+      command: create account admin Local-Admin WGU123
