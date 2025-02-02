@@ -1,7 +1,11 @@
 - name: Create Users on Switches
-  hosts: 10.10.1.22
+  hosts: localhost
+  gather_facts: no
   tasks:
     - name: Create Local-Admin user
+      local_action: command python exos_ssh.py "{{ item }}" "{{ item.username }}"
+      delegate_to: localhost
+      with_items: "{{ switches }}"
       community.network.exos_config:
         commands:
           create account admin Local-Admin WGU123
