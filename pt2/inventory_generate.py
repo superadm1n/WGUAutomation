@@ -21,7 +21,6 @@ gns_data = read_yaml('gns_data.yaml')
 # add ansible information for each linux host
 gns_data.get('linux', {})['vars'] = {
         'ansible_password': 'P@ssw0rd',
-        'ansible_become_password': 'P@ssw0rd',
     }
 # add ansible information to each windows device
 gns_data.get('windows', {})['vars'] = {

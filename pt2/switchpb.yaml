@@ -3,7 +3,4 @@
   gather_facts: no
   tasks:
     - name: Create Local-Admin user
-      expect:
-        command: create account admin Local-Admin WGU123
-        response:
-          "Note: Accounts created with this version of EXOS are not compatible with EXOS21.x and earlier."
+      command: create account admin Local-Admin WGU123
