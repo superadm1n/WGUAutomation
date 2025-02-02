@@ -3,7 +3,7 @@
   gather_facts: no
   tasks:
     - name: Create Local-Admin user
-      raw: "exos-cli: create account admin Local-Admin WGU123"
+      raw: "exos-cli; create account admin Local-Admin WGU123"
       failed_when: false
       register: output
     - name: output
