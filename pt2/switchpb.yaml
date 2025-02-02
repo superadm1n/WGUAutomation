@@ -3,4 +3,6 @@
   gather_facts: no
   tasks:
     - name: Create Local-Admin user
+      become: true
+      become_method: enable
       command: create account admin Local-Admin WGU123
