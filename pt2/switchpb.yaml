@@ -4,3 +4,8 @@
   tasks:
     - name: Create Local-Admin user
       raw: create account admin Local-Admin WGU123
+      failed_when: false
+      register: output
+    - name: output
+      debug:
+        var: output
