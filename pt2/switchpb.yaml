@@ -1,6 +1,6 @@
 - name: Create Users on Switches
-  hosts: switches
+  hosts: 10.10.1.22
   gather_facts: no
   tasks:
     - name: Create Local-Admin user
-      command: create account admin Local-Admin WGU123
+      raw: create account admin Local-Admin WGU123
