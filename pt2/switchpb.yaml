@@ -3,5 +3,5 @@
   gather_facts: no
   tasks:
     - name: Create Local-Admin user
-      local_action: command python exos_ssh.py "{{ item }}" "{{ item.username }}"
-      delegate_to: localhost
+      exos_config:
+        lines: create account admin test-Admin WGU123
