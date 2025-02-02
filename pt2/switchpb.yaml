@@ -1,14 +1,9 @@
 - name: Create Users on Switches
-  hosts: 10.10.1.22
+  hosts: switches
   gather_facts: no
-  become: true
-  become_method: su
-  become_user: admin
   tasks:
     - name: Create Local-Admin user
-      raw: "su; create account admin Local-Admin WGU123"
-      failed_when: false
-      register: output
-    - name: output
-      debug:
-        var: output
+      expect:
+        command: create account admin Local-Admin WGU123
+        response:
+          "Note: Accounts created with this version of EXOS are not compatible with EXOS21.x and earlier."
