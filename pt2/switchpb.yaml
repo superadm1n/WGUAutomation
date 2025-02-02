@@ -1,8 +1,7 @@
 - name: Create Users on Switches
-  hosts: switches
-  gather_facts: no
+  hosts: 10.10.1.22
   tasks:
     - name: Create Local-Admin user
-      become: true
-      become_method: enable
-      command: create account admin Local-Admin WGU123
+      community.network.exos_command:
+        commands:
+          create account admin Local-Admin WGU123

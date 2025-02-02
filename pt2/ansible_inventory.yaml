@@ -104,7 +104,7 @@ switches:
         Type: Realtek 8139 Ethernet (rtl8139)
   vars:
     ansible_connection: ansible.netcommon.network_cli
-    ansible_network_os: community.network.exos
+    ansible_network_os: exos
     ansible_user: admin
 windows:
   hosts:
