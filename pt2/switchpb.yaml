@@ -1,6 +1,9 @@
 - name: Create Users on Switches
   hosts: 10.10.1.22
   gather_facts: no
+  become: true
+  become_method: su
+  become_user: admin
   tasks:
     - name: Create Local-Admin user
       raw: "su; create account admin Local-Admin WGU123"
