@@ -21,7 +21,7 @@ if __name__ == '__main__':
     vlan_id = 10
     for ip, data in config.get('switches', {}).items():
         if ip == '10.10.1.24':
-            # No need to creat any vlans on "local" switch
+            # No need to create any vlans on "local" switch
             continue
         user = config.get('switches', {}).get('vars', {}).get('ansible_user', '')
         with ConnectHandler(device_type='extreme_exos', host=ip, username=user, password='') as ssh:
