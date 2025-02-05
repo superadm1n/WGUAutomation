@@ -58,4 +58,4 @@
   tasks:
     - name: Create Local-Admin user
       exos_config:
-        lines: create account admin test-Admin WGU123
+        lines: create account admin Local-Admin WGU123
