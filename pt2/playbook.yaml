@@ -35,6 +35,7 @@
 - name: Create Users on Acct Network
   hosts: 10.10.1.56
   become: true
+  ansible_become_method: sudo
   tasks:
     - name: Create TestUser1
       ansible.builtin.user:
@@ -45,6 +46,7 @@
 - name: Create Users on MGMT Network
   hosts: 10.10.1.57
   become: true
+  ansible_become_method: sudo
   tasks:
     - name: Create TestUser2
       ansible.builtin.user:
