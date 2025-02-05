@@ -1,78 +1,79 @@
 
 switches:
-  10.10.1.24:
-    General settings:
-      name: Local_Switch
-      ram: 512MB
-      vCPUs: 1
-      Qemu binary: /usr/bin/qemu-system-x86_64 (v4.2.1)
-      Boot Priority: CD/DVD-ROM or HDD
-      On Close: Power off the VM
-      Console Type: telnet
-    Network settings:
-      Adapters: 13
-      Base MAC: 0c:c0:5e:66:00:00
-      Type: Realtek 8139 Ethernet (rtl8139)
-      Replicate network connection states in QEMU: True
+  hosts:
+    10.10.1.24:
+      General settings:
+        name: Local_Switch
+        ram: 512MB
+        vCPUs: 1
+        Qemu binary: /usr/bin/qemu-system-x86_64 (v4.2.1)
+        Boot Priority: CD/DVD-ROM or HDD
+        On Close: Power off the VM
+        Console Type: telnet
+      Network settings:
+        Adapters: 13
+        Base MAC: 0c:c0:5e:66:00:00
+        Type: Realtek 8139 Ethernet (rtl8139)
+        Replicate network connection states in QEMU: True
 
-  10.10.1.22:
-    General settings:
-      name: User_Network
-      ram: 512MB
-      vCPUs: 1
-      Qemu binary: /usr/bin/qemu-system-x86_64 (v4.2.1)
-      Boot Priority: CD/DVD-ROM or HDD
-      On Close: Power off the VM
-      Console Type: telnet
-    Network settings:
-      Adapters: 13
-      Base MAC: 0c:e0:f2:0b:00:00
-      Type: Realtek 8139 Ethernet (rtl8139)
-      Replicate network connection states in QEMU: True
+    10.10.1.22:
+      General settings:
+        name: User_Network
+        ram: 512MB
+        vCPUs: 1
+        Qemu binary: /usr/bin/qemu-system-x86_64 (v4.2.1)
+        Boot Priority: CD/DVD-ROM or HDD
+        On Close: Power off the VM
+        Console Type: telnet
+      Network settings:
+        Adapters: 13
+        Base MAC: 0c:e0:f2:0b:00:00
+        Type: Realtek 8139 Ethernet (rtl8139)
+        Replicate network connection states in QEMU: True
 
-  10.10.1.32:
-    General settings:
-      name: ACCT_Network
-      ram: 512MB
-      vCPUs: 1
-      Qemu binary: /usr/bin/qemu-system-x86_64 (v4.2.1)
-      Boot Priority: CD/DVD-ROM or HDD
-      On Close: Power off the VM
-      Console Type: telnet
-    Network settings:
-      Adapters: 13
-      Base MAC: 0c:40:34:07:00:00
-      Type: Realtek 8139 Ethernet (rtl8139)
-      Replicate network connection states in QEMU: True
+    10.10.1.32:
+      General settings:
+        name: ACCT_Network
+        ram: 512MB
+        vCPUs: 1
+        Qemu binary: /usr/bin/qemu-system-x86_64 (v4.2.1)
+        Boot Priority: CD/DVD-ROM or HDD
+        On Close: Power off the VM
+        Console Type: telnet
+      Network settings:
+        Adapters: 13
+        Base MAC: 0c:40:34:07:00:00
+        Type: Realtek 8139 Ethernet (rtl8139)
+        Replicate network connection states in QEMU: True
 
-  10.10.1.31:
-    General settings:
-      name: MGMT_Network
-      ram: 512MB
-      vCPUs: 1
-      Qemu binary: /usr/bin/qemu-system-x86_64 (v4.2.1)
-      Boot Priority: CD/DVD-ROM or HDD
-      On Close: Power off the VM
-      Console Type: telnet
-    Network settings:
-      Adapters: 13
-      Base MAC: 0c:cc:78:5d:00:00
-      Type: Realtek 8139 Ethernet (rtl8139)
-      Replicate network connection states in QEMU: True
+    10.10.1.31:
+      General settings:
+        name: MGMT_Network
+        ram: 512MB
+        vCPUs: 1
+        Qemu binary: /usr/bin/qemu-system-x86_64 (v4.2.1)
+        Boot Priority: CD/DVD-ROM or HDD
+        On Close: Power off the VM
+        Console Type: telnet
+      Network settings:
+        Adapters: 13
+        Base MAC: 0c:cc:78:5d:00:00
+        Type: Realtek 8139 Ethernet (rtl8139)
+        Replicate network connection states in QEMU: True
 
-  10.10.1.30:
-    General settings:
-      name: IT_Network
-      ram: 512MB
-      vCPUs: 1
-      Qemu binary: /usr/bin/qemu-system-x86_64 (v4.2.1)
-      Boot Priority: CD/DVD-ROM or HDD
-      On Close: Power off the VM
-      Console Type: telnet
-    Network settings:
-      Adapters: 13
-      Base MAC: 0c:1c:b2:85:00:00
-      Type: Realtek 8139 Ethernet (rtl8139)
-      Replicate network connection states in QEMU: True
+    10.10.1.30:
+      General settings:
+        name: IT_Network
+        ram: 512MB
+        vCPUs: 1
+        Qemu binary: /usr/bin/qemu-system-x86_64 (v4.2.1)
+        Boot Priority: CD/DVD-ROM or HDD
+        On Close: Power off the VM
+        Console Type: telnet
+      Network settings:
+        Adapters: 13
+        Base MAC: 0c:1c:b2:85:00:00
+        Type: Realtek 8139 Ethernet (rtl8139)
+        Replicate network connection states in QEMU: True
 
 
