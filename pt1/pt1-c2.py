@@ -19,7 +19,7 @@ if __name__ == '__main__':
     config = read_yaml('ansible_inventory.yaml')
 
     vlan_id = 10
-    for ip, data in config.get('switches', {}).items():
+    for ip, data in config.get('switches', {}).get('hosts', {}).items():
         if ip == '10.10.1.24':
             # No need to create any vlans on "local" switch
             continue
