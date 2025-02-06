@@ -18,8 +18,9 @@ if __name__ == '__main__':
 
     config = read_yaml('ansible_inventory.yaml')
 
-    for ip, data in config.get('switches', {}).items():
+    for ip, data in config.get('switches', {}).get('hosts', {}).items():
         print(f'=== {ip} | {data.get("General settings", "").get("name", "")} ===')
-        with ConnectHandler(device_type='extreme_exos', host=ip, username=data.get('vars', {}).get('ansible_user', {}), password='') as ssh:
+        user = config.get('switches', {}).get('vars', {}).get('ansible_user', '')
+        with ConnectHandler(device_type='extreme_exos', host=ip, username=user, password='') as ssh:
             print(ssh.send_command('show vlan'))
         print(f'\n{"="*10}\n')
