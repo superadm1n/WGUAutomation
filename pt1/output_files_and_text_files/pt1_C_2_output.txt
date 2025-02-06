@@ -1,0 +1,27 @@
+student@student-Standard-PC-i440FX-PIIX-1996:~/WGUAutomation/pt1$ python3 pt1-c2.py 
+=== 10.10.1.22 | User_Network ===
+
+
+
+==========
+
+=== 10.10.1.30 | IT_Network ===
+
+
+
+==========
+
+=== 10.10.1.31 | MGMT_Network ===
+
+
+
+==========
+
+=== 10.10.1.32 | ACCT_Network ===
+
+
+
+==========
+
+student@student-Standard-PC-i440FX-PIIX-1996:~/WGUAutomation/pt1$ 
+
