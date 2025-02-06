@@ -25,6 +25,7 @@ if __name__ == '__main__':
             continue
         user = config.get('switches', {}).get('vars', {}).get('ansible_user', '')
         with ConnectHandler(device_type='extreme_exos', host=ip, username=user, password='') as ssh:
+            print(f'=== {ip} | {data.get("General settings", "").get("name", "")} ===')
             print(ssh.send_command(f'create vlan {vlan_id} description {data.get("General settings", "").get("name", "")}'))
             print(ssh.send_command(f'configure vlan {vlan_id} name {data.get("General settings", "").get("name", "")}'))
         print(f'\n{"="*10}\n')
