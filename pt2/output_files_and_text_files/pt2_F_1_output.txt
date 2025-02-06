@@ -1,0 +1,104 @@
+student@student-Standard-PC-i440FX-PIIX-1996:~/WGUAutomation/pt2$ ansible-playbook -i ansible_inventory.yaml playbook.yaml
+
+PLAY [Create Users on Windows] *************************************************************************
+
+TASK [Gathering Facts] *********************************************************************************
+ok: [10.10.1.36]
+ok: [10.10.1.35]
+ok: [10.10.1.43]
+ok: [10.10.1.29]
+
+TASK [Create DesktopUser1] *****************************************************************************
+ok: [10.10.1.36]
+ok: [10.10.1.35]
+ok: [10.10.1.43]
+ok: [10.10.1.29]
+
+TASK [Create DesktopUser2] *****************************************************************************
+ok: [10.10.1.36]
+ok: [10.10.1.43]
+ok: [10.10.1.35]
+ok: [10.10.1.29]
+
+TASK [Create DesktopUser3] *****************************************************************************
+ok: [10.10.1.43]
+ok: [10.10.1.36]
+ok: [10.10.1.35]
+ok: [10.10.1.29]
+
+TASK [Create DesktopUser4] *****************************************************************************
+ok: [10.10.1.36]
+ok: [10.10.1.43]
+ok: [10.10.1.35]
+ok: [10.10.1.29]
+
+PLAY [Create Users on Acct Network] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************************************
+ok: [10.10.1.56]
+
+TASK [Create TestUser1] ********************************************************************************
+ok: [10.10.1.56]
+
+PLAY [Create Users on MGMT Network] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************************************
+ok: [10.10.1.57]
+
+TASK [Create TestUser2] ********************************************************************************
+ok: [10.10.1.57]
+
+PLAY [Create Users on Switches] ************************************************************************
+
+TASK [Create Local-Admin user] *************************************************************************
+[DEPRECATION WARNING]: Distribution Ubuntu 20.04 on host 10.10.1.32 should use /usr/bin/python3, but is
+ using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release
+ will default to using the discovered platform python for this host. See 
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more 
+information. This feature will be removed in version 2.12. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+changed: [10.10.1.32]
+[DEPRECATION WARNING]: Distribution Ubuntu 20.04 on host 10.10.1.24 should use /usr/bin/python3, but is
+ using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release
+ will default to using the discovered platform python for this host. See 
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more 
+information. This feature will be removed in version 2.12. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+changed: [10.10.1.24]
+[DEPRECATION WARNING]: Distribution Ubuntu 20.04 on host 10.10.1.31 should use /usr/bin/python3, but is
+ using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release
+ will default to using the discovered platform python for this host. See 
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more 
+information. This feature will be removed in version 2.12. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+changed: [10.10.1.31]
+[DEPRECATION WARNING]: Distribution Ubuntu 20.04 on host 10.10.1.22 should use /usr/bin/python3, but is
+ using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release
+ will default to using the discovered platform python for this host. See 
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more 
+information. This feature will be removed in version 2.12. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+changed: [10.10.1.22]
+[DEPRECATION WARNING]: Distribution Ubuntu 20.04 on host 10.10.1.30 should use /usr/bin/python3, but is
+ using /usr/bin/python for backward compatibility with prior Ansible releases. A future Ansible release
+ will default to using the discovered platform python for this host. See 
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more 
+information. This feature will be removed in version 2.12. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+changed: [10.10.1.30]
+
+PLAY RECAP *********************************************************************************************
+10.10.1.22                 : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.10.1.24                 : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.10.1.29                 : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.10.1.30                 : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.10.1.31                 : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.10.1.32                 : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.10.1.35                 : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.10.1.36                 : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.10.1.43                 : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.10.1.56                 : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.10.1.57                 : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+student@student-Standard-PC-i440FX-PIIX-1996:~/WGUAutomation/pt2$ 
+
